@@ -1,6 +1,12 @@
 # EduSphere — Assignment 5: Advanced JavaScript and DOM Manipulation
 
-Team **The Ethernet**, group **SE-2510**: Ramil Zhunussov, Maxim Batyushkin, Azamat Mustafin.
+Team **The Ethernet**, group **SE-2510**.
+
+| Member | Role in Assignment 5 |
+|---|---|
+| Ramil Zhunussov | Team lead. Courses page: catalogue from data, filters, rating, enrolment form (`js/courses.js`), deployment |
+| Maxim Batyushkin | Shared script: Day/Night theme, keyboard navigation, sounds (`js/main.js`), animations and night theme (`css/interactive.css`) |
+| Azamat Mustafin | Home page: greeting, cohort object (`js/home.js`), contact form script (`js/contact.js`), testing |
 
 The EduSphere online-learning site from Assignment 3, now with interactive features
 written in plain JavaScript.

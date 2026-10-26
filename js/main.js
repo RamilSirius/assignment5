@@ -1,7 +1,7 @@
 /* ==========================================================================
    EduSphere — shared JavaScript (loaded on every Bootstrap page)
    Team: The Ethernet (Group SE-2510) · Assignment #5
-   Author: Ramil Zhunussov
+   Author: Maxim Batyushkin
 
    1. Sound effects       -> playSound()
    2. Day / Night theme   -> toggle button in the navbar

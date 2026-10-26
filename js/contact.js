@@ -1,5 +1,6 @@
 /* ==========================================================================
    EduSphere — contact.html
+   Author: Azamat Mustafin
    Bootstrap form validation (Assignment #3, Task 9). Moved out of the HTML
    into its own file in Assignment #5 (separation of HTML and JavaScript).
    ========================================================================== */

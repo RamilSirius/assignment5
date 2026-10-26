@@ -1,6 +1,6 @@
 /* ==========================================================================
    EduSphere — index.html (Home)
-   Author: Ramil Zhunussov · Assignment #5
+   Author: Azamat Mustafin · Assignment #5
 
    1. Greeting   -> depends on the time of day (switch) and the visitor's name
    2. Cohort     -> object with methods; the sidebar card shows its properties
