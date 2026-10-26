@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" role="img">
+  <title>Open lecture in the campus auditorium with a guest speaker</title>
+  <rect width="400" height="300" fill="#5b54c9"/>
+  <rect x="0" y="0" width="400" height="150" fill="#413c9e"/>
+
+  <!-- ceiling lights -->
+  <circle cx="70" cy="26" r="12" fill="#f2a33c" opacity="0.9"/>
+  <circle cx="200" cy="18" r="12" fill="#f2a33c" opacity="0.9"/>
+  <circle cx="330" cy="26" r="12" fill="#f2a33c" opacity="0.9"/>
+  <path d="M70 38 L38 110 L102 110 Z" fill="#f2a33c" opacity="0.14"/>
+  <path d="M330 38 L298 110 L362 110 Z" fill="#f2a33c" opacity="0.14"/>
+
+  <!-- presentation board -->
+  <rect x="106" y="48" width="188" height="96" rx="8" fill="#ffffff"/>
+  <rect x="124" y="66" width="76" height="11" rx="5.5" fill="#2f2a77"/>
+  <rect x="124" y="88" width="120" height="7" rx="3.5" fill="#dcdaf2"/>
+  <rect x="124" y="104" width="96" height="7" rx="3.5" fill="#dcdaf2"/>
+  <rect x="124" y="122" width="58" height="14" rx="7" fill="#16a394"/>
+
+  <!-- speaker at the podium -->
+  <rect x="172" y="212" width="56" height="60" rx="5" fill="#2f2a77"/>
+  <rect x="166" y="206" width="68" height="10" rx="5" fill="#f2a33c"/>
+  <circle cx="200" cy="172" r="22" fill="#f6d3ae"/>
+  <path d="M178 170 a22 22 0 0 1 44 0 c0 -15 -10 -24 -22 -24 s-22 9 -22 24 z" fill="#2a1a0e"/>
+  <path d="M200 196 c-18 0 -32 11 -32 26 v6 h64 v-6 c0 -15 -14 -26 -32 -26 z" fill="#ffffff"/>
+
+  <!-- tiered seating -->
+  <g fill="#2f2a77">
+    <rect x="0" y="248" width="400" height="14" rx="4"/>
+    <rect x="0" y="276" width="400" height="14" rx="4"/>
+  </g>
+  <g fill="#16a394">
+    <circle cx="48" cy="242" r="14"/>
+    <circle cx="106" cy="242" r="14"/>
+    <circle cx="300" cy="242" r="14"/>
+    <circle cx="358" cy="242" r="14"/>
+  </g>
+  <g fill="#f2a33c">
+    <circle cx="30" cy="270" r="14"/>
+    <circle cx="90" cy="270" r="14"/>
+    <circle cx="150" cy="270" r="14"/>
+    <circle cx="250" cy="270" r="14"/>
+    <circle cx="310" cy="270" r="14"/>
+    <circle cx="370" cy="270" r="14"/>
+  </g>
+</svg>

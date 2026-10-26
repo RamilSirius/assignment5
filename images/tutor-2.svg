@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240" role="img">
+  <title>Portrait of the data science instructor</title>
+  <rect width="240" height="240" fill="#d6f1ec"/>
+  <circle cx="120" cy="120" r="120" fill="#5b54c9"/>
+  <circle cx="120" cy="98" r="44" fill="#ffe0b8"/>
+  <path d="M72 112 c-6 -46 20 -70 48 -70 s54 24 48 70 c-8 -12 -10 -30 -10 -44 c-16 12 -60 12 -76 0 c0 14 -2 32 -10 44 z" fill="#241a10"/>
+  <path d="M120 148 c-42 0 -72 24 -72 56 v36 h144 v-36 c0 -32 -30 -56 -72 -56 z" fill="#f2a33c"/>
+  <path d="M100 150 h40 l-20 34 z" fill="#ffffff"/>
+  <path d="M120 190 v40" stroke="#2f2a77" stroke-width="6" stroke-linecap="round"/>
+</svg>

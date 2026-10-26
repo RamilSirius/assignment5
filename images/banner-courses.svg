@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 300" width="960" height="300" role="img">
+  <title>Banner with a stack of books, code brackets and a graduation cap</title>
+  <rect width="960" height="300" rx="20" fill="#2f2a77"/>
+  <circle cx="120" cy="60" r="70" fill="#5b54c9" opacity="0.45"/>
+  <circle cx="860" cy="250" r="90" fill="#16a394" opacity="0.30"/>
+
+  <!-- books -->
+  <rect x="120" y="190" width="180" height="22" rx="6" fill="#f2a33c"/>
+  <rect x="136" y="164" width="150" height="22" rx="6" fill="#ffffff"/>
+  <rect x="150" y="138" width="122" height="22" rx="6" fill="#16a394"/>
+
+  <!-- code brackets -->
+  <text x="430" y="196" font-family="Consolas, monospace" font-size="96" fill="#ffffff" opacity="0.9">&lt;/&gt;</text>
+
+  <!-- graduation cap -->
+  <path d="M700 130 L790 96 L880 130 L790 164 Z" fill="#f2a33c"/>
+  <path d="M740 148 v34 c0 14 22 24 50 24 s50 -10 50 -24 v-34 l-50 20 z" fill="#ffffff"/>
+  <line x1="880" y1="130" x2="880" y2="182" stroke="#ffffff" stroke-width="5"/>
+  <circle cx="880" cy="188" r="8" fill="#16a394"/>
+
+  <rect x="120" y="240" width="300" height="10" rx="5" fill="#ffffff" opacity="0.35"/>
+</svg>

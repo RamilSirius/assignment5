@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240" role="img">
+  <title>Avatar of team member 1</title>
+  <rect width="240" height="240" fill="#dedcf6"/>
+  <circle cx="120" cy="120" r="120" fill="#5b54c9"/>
+  <circle cx="120" cy="96" r="46" fill="#ffe0b8"/>
+  <path d="M74 88 a46 46 0 0 1 92 0 c0 -30 -20 -46 -46 -46 s-46 16 -46 46 z" fill="#3a2e1f"/>
+  <path d="M120 146 c-42 0 -72 24 -72 56 v38 h144 v-38 c0 -32 -30 -56 -72 -56 z" fill="#f2a33c"/>
+  <path d="M120 146 l-16 26 l16 18 l16 -18 z" fill="#ffffff"/>
+</svg>

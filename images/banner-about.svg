@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 320" width="960" height="320" role="img">
+  <title>Three students collaborating around a shared screen in a study room</title>
+  <rect width="960" height="320" rx="20" fill="#eceafb"/>
+  <rect x="0" y="250" width="960" height="70" rx="0" fill="#dcdaf2"/>
+
+  <!-- window -->
+  <rect x="620" y="40" width="280" height="170" rx="14" fill="#ffffff" stroke="#c9c6ea" stroke-width="3"/>
+  <line x1="760" y1="40" x2="760" y2="210" stroke="#c9c6ea" stroke-width="3"/>
+  <line x1="620" y1="125" x2="900" y2="125" stroke="#c9c6ea" stroke-width="3"/>
+  <circle cx="700" cy="82" r="18" fill="#f2a33c"/>
+
+  <!-- shared table -->
+  <rect x="70" y="222" width="460" height="16" rx="8" fill="#2f2a77"/>
+
+  <!-- monitor -->
+  <rect x="238" y="120" width="150" height="96" rx="8" fill="#2f2a77"/>
+  <rect x="248" y="130" width="130" height="76" rx="4" fill="#ffffff"/>
+  <rect x="260" y="144" width="60" height="8" rx="4" fill="#5b54c9"/>
+  <rect x="260" y="160" width="98" height="6" rx="3" fill="#dcdaf2"/>
+  <rect x="260" y="174" width="80" height="6" rx="3" fill="#dcdaf2"/>
+
+  <!-- student left -->
+  <circle cx="140" cy="130" r="30" fill="#f2a33c"/>
+  <path d="M140 166 c-28 0 -48 16 -48 38 v18 h96 v-18 c0 -22 -20 -38 -48 -38 z" fill="#5b54c9"/>
+
+  <!-- student middle (behind the monitor) -->
+  <circle cx="312" cy="66" r="26" fill="#16a394"/>
+  <path d="M312 98 c-30 0 -52 16 -52 36 v18 h104 v-18 c0 -20 -22 -36 -52 -36 z" fill="#413c9e"/>
+
+  <!-- student right -->
+  <circle cx="470" cy="140" r="28" fill="#16a394"/>
+  <path d="M470 174 c-26 0 -44 15 -44 35 v13 h88 v-13 c0 -20 -18 -35 -44 -35 z" fill="#2f2a77"/>
+
+  <!-- plant -->
+  <rect x="556" y="194" width="40" height="38" rx="8" fill="#f2a33c"/>
+  <path d="M576 194 v-30" stroke="#16a394" stroke-width="6" stroke-linecap="round"/>
+  <ellipse cx="558" cy="166" rx="18" ry="11" fill="#16a394" transform="rotate(-25 558 166)"/>
+  <ellipse cx="594" cy="172" rx="16" ry="10" fill="#16a394" transform="rotate(25 594 172)"/>
+</svg>

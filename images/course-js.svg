@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="400" height="240" role="img">
+  <title>Code editor with brackets illustrating the JavaScript course</title>
+  <rect width="400" height="240" fill="#2f2a77"/>
+  <circle cx="60" cy="200" r="60" fill="#5b54c9" opacity="0.5"/>
+  <rect x="70" y="50" width="260" height="140" rx="12" fill="#1b1a44"/>
+  <rect x="70" y="50" width="260" height="26" rx="12" fill="#413c9e"/>
+  <g font-family="Consolas, monospace" font-size="17">
+    <text x="90" y="106" fill="#f2a33c">function</text>
+    <text x="176" y="106" fill="#ffffff">learn() {</text>
+    <text x="106" y="132" fill="#16a394">return</text>
+    <text x="164" y="132" fill="#ffffff">'skills';</text>
+    <text x="90" y="158" fill="#ffffff">}</text>
+  </g>
+  <rect x="90" y="172" width="80" height="6" rx="3" fill="#5b54c9"/>
+</svg>

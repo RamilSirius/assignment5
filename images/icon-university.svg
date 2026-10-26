@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img">
+  <title>University building icon representing undergraduate students</title>
+  <circle cx="60" cy="60" r="56" fill="#d6f1ec"/>
+  <path d="M22 50 L60 28 L98 50 Z" fill="#2f2a77"/>
+  <rect x="28" y="50" width="64" height="40" fill="#ffffff"/>
+  <rect x="36" y="58" width="10" height="32" fill="#16a394"/>
+  <rect x="55" y="58" width="10" height="32" fill="#16a394"/>
+  <rect x="74" y="58" width="10" height="32" fill="#16a394"/>
+  <rect x="24" y="90" width="72" height="8" rx="3" fill="#2f2a77"/>
+  <circle cx="60" cy="40" r="5" fill="#f2a33c"/>
+</svg>

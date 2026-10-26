@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240" role="img">
+  <title>Portrait of the UX design instructor</title>
+  <rect width="240" height="240" fill="#fbe6c8"/>
+  <circle cx="120" cy="120" r="120" fill="#16a394"/>
+  <circle cx="120" cy="96" r="44" fill="#f9dcc0"/>
+  <path d="M76 92 a44 44 0 0 1 88 0 c0 -28 -20 -50 -44 -50 s-44 22 -44 50 z" fill="#5a2f1a"/>
+  <circle cx="78" cy="104" r="12" fill="#5a2f1a"/>
+  <circle cx="162" cy="104" r="12" fill="#5a2f1a"/>
+  <path d="M120 148 c-42 0 -72 24 -72 56 v36 h144 v-36 c0 -32 -30 -56 -72 -56 z" fill="#2f2a77"/>
+  <path d="M104 152 h32 l-16 34 z" fill="#f2a33c"/>
+</svg>

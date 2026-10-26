@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" role="img">
+  <title>Workshop at a whiteboard explaining the flexbox and grid box model</title>
+  <rect width="400" height="300" fill="#d6f1ec"/>
+  <rect x="0" y="244" width="400" height="56" fill="#bfe6df"/>
+
+  <!-- whiteboard -->
+  <rect x="58" y="30" width="298" height="196" rx="8" fill="#ffffff" stroke="#16a394" stroke-width="4"/>
+
+  <!-- flex row diagram -->
+  <text x="78" y="62" font-family="Consolas, monospace" font-size="14" fill="#2f2a77">display: flex</text>
+  <rect x="78" y="74" width="60" height="44" rx="5" fill="#5b54c9"/>
+  <rect x="148" y="74" width="60" height="44" rx="5" fill="#5b54c9"/>
+  <rect x="218" y="74" width="60" height="44" rx="5" fill="#5b54c9"/>
+  <path d="M138 96 h10 M208 96 h10" stroke="#f2a33c" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- grid diagram -->
+  <text x="78" y="152" font-family="Consolas, monospace" font-size="14" fill="#2f2a77">grid-areas</text>
+  <rect x="78" y="164" width="200" height="20" rx="3" fill="#2f2a77"/>
+  <rect x="78" y="188" width="56" height="26" rx="3" fill="#16a394"/>
+  <rect x="140" y="188" width="138" height="26" rx="3" fill="#dcdaf2"/>
+  <rect x="294" y="164" width="44" height="50" rx="4" fill="#f2a33c"/>
+
+  <!-- marker tray -->
+  <rect x="120" y="226" width="90" height="8" rx="4" fill="#16a394"/>
+  <rect x="136" y="218" width="26" height="7" rx="3.5" fill="#f2a33c"/>
+  <rect x="168" y="218" width="26" height="7" rx="3.5" fill="#5b54c9"/>
+
+  <!-- presenter -->
+  <circle cx="30" cy="150" r="22" fill="#f6d3ae"/>
+  <path d="M8 148 a22 22 0 0 1 44 0 c0 -15 -10 -24 -22 -24 s-22 9 -22 24 z" fill="#2a1a0e"/>
+  <path d="M30 174 c-22 0 -38 13 -38 31 v39 h76 v-39 c0 -18 -16 -31 -38 -31 z" fill="#2f2a77"/>
+  <path d="M50 186 l34 -22 l6 10 l-34 24 z" fill="#f6d3ae"/>
+</svg>

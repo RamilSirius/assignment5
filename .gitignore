@@ -1,0 +1,9 @@
+# Assignment briefs from the instructor — not part of the website.
+# Only root-level PDFs are ignored, so report/*.pdf stays in the repository.
+/*.pdf
+
+# OS / editor noise
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/

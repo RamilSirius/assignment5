@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- =====================================================================
+       Project : EduSphere — Online Educational Platform
+       Team    : The Ethernet (Group SE-2510)
+       Members : Ramil Zhunussov, Maxim Batyushkin, Azamat Mustafin
+       Page    : task1-typography.html — Assignment #3, Part 1, Task 1
+       Note    : NO Bootstrap on this page. Plain CSS + media queries
+                 from css/media-queries.css (mobile-first).
+       ===================================================================== -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Assignment #3 Task 1: font sizes that change with media queries for mobile, tablet and desktop.">
+  <meta name="author" content="The Ethernet">
+  <title>Task 1: Responsive Typography — EduSphere</title>
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/media-queries.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="inner">
+      <a class="brand" href="index.html">
+        <img src="images/logo.svg" alt="EduSphere logo" width="36" height="36">
+        EduSphere
+      </a>
+      <nav class="task-nav" aria-label="Assignment #3 pages">
+        <ul>
+          <li><a href="index.html">Back to EduSphere</a></li>
+          <li><a href="task1-typography.html" aria-current="page">Task 1: Typography</a></li>
+          <li><a href="task2-cards.html">Task 2: Card group</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <!-- the text of this label is set by the media queries (::after) -->
+    <p class="breakpoint" aria-hidden="true"></p>
+
+    <h1>Responsive typography</h1>
+
+    <p class="lead">
+      Resize the browser window: every heading and paragraph on this page gets
+      smaller on a phone, medium on a tablet and larger on a desktop.
+    </p>
+
+    <!-- TASK 1: the table explains which size each element gets -->
+    <div class="table-wrap">
+      <table class="size-table">
+        <caption>Font sizes set by the media queries in css/media-queries.css</caption>
+        <thead>
+          <tr>
+            <th scope="col">Element</th>
+            <th scope="col">Mobile (&lt; 768px)</th>
+            <th scope="col">Tablet (768px+)</th>
+            <th scope="col">Desktop (1024px+)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">h1</th><td>28px</td><td>36px</td><td>48px</td></tr>
+          <tr><th scope="row">h2</th><td>~22px</td><td>~26px</td><td>32px</td></tr>
+          <tr><th scope="row">h3</th><td>~18px</td><td>~19px</td><td>~22px</td></tr>
+          <tr><th scope="row">Paragraph</th><td>~15px</td><td>16px</td><td>18px</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Why text size should depend on the screen</h2>
+    <p>
+      A heading that looks balanced on a 27-inch monitor takes half of a phone
+      screen and pushes the content out of sight. Text that is comfortable on a
+      phone looks tiny on a wide desktop, where the reader sits further away.
+      Media queries let one stylesheet choose the right size for each case.
+    </p>
+
+    <h3>How it works on this page</h3>
+    <p>
+      All font sizes are stored as CSS variables in <code>:root</code>. The base
+      values are for phones. Two media queries,
+      <code>@media (min-width: 768px)</code> and
+      <code>@media (min-width: 1024px)</code>, change only the variables, so every
+      heading and paragraph updates at once.
+    </p>
+
+    <div class="sample">
+      <h3>Example from the EduSphere catalogue</h3>
+      <p>
+        HTML &amp; CSS Foundations is an eight-week course for complete beginners.
+        You learn semantic markup, the box model and responsive layouts, and you
+        finish by publishing your own site to GitHub Pages.
+      </p>
+    </div>
+
+    <h2>Mobile first</h2>
+    <p>
+      The stylesheet is written mobile first: the rules without a media query
+      describe the smallest screen, and <code>min-width</code> queries add
+      changes as the screen grows. Phones download and apply the simplest
+      version, and bigger screens build on top of it.
+    </p>
+
+  </main>
+
+  <!-- Assignment rule: names of all team members in the <footer> -->
+  <footer class="site-footer">
+    <div class="inner">
+      <h2>The Ethernet — Group SE-2510</h2>
+      <ul>
+        <li>Ramil Zhunussov</li>
+        <li>Maxim Batyushkin</li>
+        <li>Azamat Mustafin</li>
+      </ul>
+      <p>&copy; 2026 EduSphere · Astana IT University · Front-End Development, Assignment #3.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

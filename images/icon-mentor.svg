@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img">
+  <title>Two people icon for personal mentor support</title>
+  <circle cx="60" cy="60" r="56" fill="#d6f1ec"/>
+  <circle cx="44" cy="46" r="16" fill="#16a394"/>
+  <path d="M44 68 c-16 0 -28 9 -28 22 v8 h56 v-8 c0 -13 -12 -22 -28 -22 z" fill="#2f2a77"/>
+  <circle cx="80" cy="52" r="12" fill="#f2a33c"/>
+  <path d="M80 68 c-12 0 -21 7 -21 17 v13 h42 v-13 c0 -10 -9 -17 -21 -17 z" fill="#5b54c9"/>
+</svg>

@@ -1,0 +1,156 @@
+/* ==========================================================================
+   EduSphere — Bootstrap theme
+   Team: The Ethernet (Group SE-2510)
+   Assignment #3: Media Queries + Bootstrap Grid
+
+   This file is linked AFTER bootstrap.min.css on every Bootstrap page.
+   It does NOT contain any layout, margin or padding rules (Task 4):
+   all spacing on the pages comes from Bootstrap utilities (m-*, p-*, g-*,
+   gap-*). Here we only recolour Bootstrap to the EduSphere palette by
+   overriding Bootstrap's own CSS variables, and set the fonts.
+
+   The old css/style.css is kept for pages that are not migrated yet.
+
+   TABLE OF CONTENTS
+   01. Brand palette -> Bootstrap variables (--bs-*)
+   02. Typography
+   03. Buttons (primary / outline-primary / warning recoloured)
+   04. Small brand helpers (.bg-edu, .brand-tagline, .card-img-top)
+   ========================================================================== */
+
+
+/* ==========================================================================
+   01. BRAND PALETTE -> BOOTSTRAP VARIABLES
+   Bootstrap reads its colours from --bs-* variables. Changing them here
+   recolours text-primary, bg-primary-subtle, border-warning, links, etc.
+   ========================================================================== */
+:root {
+  /* EduSphere palette (same values as in the old style.css) */
+  --edu-indigo: #2f2a77;         /* deep indigo — navbar, footer, primary */
+  --edu-indigo-light: #5b54c9;   /* lighter indigo — hovers               */
+  --edu-amber: #f2a33c;          /* warm amber — accent buttons           */
+  --edu-amber-dark: #d4831a;     /* amber hover state                     */
+  --edu-tint: #efeefc;           /* tinted section background             */
+  --edu-text: #1b1c3a;           /* main body text                        */
+  --edu-muted: #5a5b78;          /* secondary text                        */
+
+  /* primary = indigo */
+  --bs-primary: var(--edu-indigo);
+  --bs-primary-rgb: 47, 42, 119;
+  --bs-primary-bg-subtle: var(--edu-tint);
+  --bs-primary-border-subtle: #cfcdee;
+  --bs-primary-text-emphasis: var(--edu-indigo);
+
+  /* warning = amber (Bootstrap's default warning is yellow) */
+  --bs-warning: var(--edu-amber);
+  --bs-warning-rgb: 242, 163, 60;
+
+  /* page and text */
+  --bs-body-bg: #f7f7fb;
+  --bs-body-color: var(--edu-text);
+  --bs-secondary-color: var(--edu-muted);
+  --bs-border-color: #e2e2ef;
+
+  /* links */
+  --bs-link-color: var(--edu-indigo-light);
+  --bs-link-color-rgb: 91, 84, 201;
+  --bs-link-hover-color: var(--edu-indigo);
+  --bs-link-hover-color-rgb: 47, 42, 119;
+
+  /* fonts */
+  --bs-body-font-family: "Segoe UI", Tahoma, Verdana, Geneva, sans-serif;
+  --edu-font-heading: Georgia, "Times New Roman", "Palatino Linotype", serif;
+}
+
+
+/* ==========================================================================
+   02. TYPOGRAPHY — serif headings, sans-serif body
+   ========================================================================== */
+h1, h2, h3, h4,
+.font-serif {
+  font-family: var(--edu-font-heading);
+}
+
+.brand-tagline {
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+}
+
+
+/* ==========================================================================
+   03. BUTTONS — Bootstrap compiles colours into each .btn-* class,
+   so we recolour them through Bootstrap's button variables.
+   ========================================================================== */
+.btn-primary {
+  --bs-btn-bg: var(--edu-indigo);
+  --bs-btn-border-color: var(--edu-indigo);
+  --bs-btn-hover-bg: var(--edu-indigo-light);
+  --bs-btn-hover-border-color: var(--edu-indigo-light);
+  --bs-btn-active-bg: #221e5c;
+  --bs-btn-active-border-color: #221e5c;
+}
+
+.btn-outline-primary {
+  --bs-btn-color: var(--edu-indigo);
+  --bs-btn-border-color: var(--edu-indigo);
+  --bs-btn-hover-bg: var(--edu-indigo);
+  --bs-btn-hover-border-color: var(--edu-indigo);
+  --bs-btn-active-bg: var(--edu-indigo);
+  --bs-btn-active-border-color: var(--edu-indigo);
+}
+
+/* amber button keeps DARK text: amber + white text fails contrast (Task 10) */
+.btn-warning {
+  --bs-btn-color: var(--edu-text);
+  --bs-btn-bg: var(--edu-amber);
+  --bs-btn-border-color: var(--edu-amber);
+  --bs-btn-hover-color: var(--edu-text);
+  --bs-btn-hover-bg: var(--edu-amber-dark);
+  --bs-btn-hover-border-color: var(--edu-amber-dark);
+  --bs-btn-active-color: var(--edu-text);
+  --bs-btn-active-bg: var(--edu-amber-dark);
+  --bs-btn-active-border-color: var(--edu-amber-dark);
+}
+
+
+/* ==========================================================================
+   04. SMALL BRAND HELPERS
+   ========================================================================== */
+
+/* Navbar and footer background — Bootstrap has no indigo bg-* class */
+.bg-edu {
+  background-color: var(--edu-indigo);
+}
+
+/* Course images keep the same height in every card of a row */
+.card-img-top {
+  aspect-ratio: 5 / 3;
+  object-fit: cover;
+}
+
+/* Navbar link colours (Task 5 + Task 10 contrast):
+   default Bootstrap dark navbar links are 55% white — too faint on indigo */
+.navbar[data-bs-theme="dark"] {
+  --bs-navbar-color: rgba(255, 255, 255, 0.88);
+  --bs-navbar-hover-color: #ffffff;
+  --bs-navbar-active-color: var(--edu-amber);
+}
+
+/* Comfortable line length for centred intro paragraphs */
+.text-measure {
+  max-width: 40rem;
+}
+
+/* Form controls (Task 9): checked radios, checkboxes and switches use the
+   brand indigo instead of Bootstrap's default blue */
+.form-check-input:checked {
+  background-color: var(--edu-indigo);
+  border-color: var(--edu-indigo);
+}
+
+.form-control:focus,
+.form-select:focus,
+.form-check-input:focus {
+  border-color: var(--edu-indigo-light);
+  box-shadow: 0 0 0 0.25rem rgba(91, 84, 201, 0.25);
+}

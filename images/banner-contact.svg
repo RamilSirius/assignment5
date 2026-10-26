@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 280" width="960" height="280" role="img">
+  <title>Envelope, chat bubbles and a support headset representing contact options</title>
+  <rect width="960" height="280" rx="20" fill="#2f2a77"/>
+  <circle cx="120" cy="230" r="78" fill="#5b54c9" opacity="0.45"/>
+  <circle cx="886" cy="44" r="60" fill="#f2a33c" opacity="0.9"/>
+  <circle cx="886" cy="44" r="34" fill="#2f2a77"/>
+
+  <!-- envelope -->
+  <rect x="120" y="86" width="230" height="150" rx="12" fill="#ffffff"/>
+  <path d="M120 98 L235 178 L350 98" fill="none" stroke="#2f2a77" stroke-width="8" stroke-linejoin="round"/>
+  <rect x="120" y="86" width="230" height="150" rx="12" fill="none" stroke="#dcdaf2" stroke-width="3"/>
+
+  <!-- chat bubbles -->
+  <rect x="420" y="70" width="180" height="90" rx="18" fill="#16a394"/>
+  <path d="M450 160 l6 30 l30 -30 z" fill="#16a394"/>
+  <rect x="444" y="98" width="100" height="10" rx="5" fill="#ffffff" opacity="0.9"/>
+  <rect x="444" y="120" width="132" height="10" rx="5" fill="#ffffff" opacity="0.6"/>
+
+  <rect x="470" y="180" width="150" height="74" rx="18" fill="#f2a33c"/>
+  <rect x="492" y="204" width="86" height="10" rx="5" fill="#ffffff" opacity="0.95"/>
+  <rect x="492" y="224" width="106" height="10" rx="5" fill="#ffffff" opacity="0.7"/>
+
+  <!-- headset support -->
+  <circle cx="790" cy="150" r="56" fill="#ffffff"/>
+  <path d="M748 150 a42 42 0 0 1 84 0" fill="none" stroke="#2f2a77" stroke-width="10"/>
+  <rect x="738" y="148" width="22" height="38" rx="10" fill="#2f2a77"/>
+  <rect x="820" y="148" width="22" height="38" rx="10" fill="#2f2a77"/>
+  <circle cx="790" cy="186" r="10" fill="#f2a33c"/>
+</svg>

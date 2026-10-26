@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="400" height="240" role="img">
+  <title>Wireframe screens and colour swatches illustrating the UX design course</title>
+  <rect width="400" height="240" fill="#efeefc"/>
+  <rect x="52" y="40" width="120" height="160" rx="14" fill="#ffffff" stroke="#cfcdee" stroke-width="3"/>
+  <rect x="70" y="62" width="84" height="42" rx="8" fill="#5b54c9" opacity="0.35"/>
+  <rect x="70" y="116" width="84" height="8" rx="4" fill="#dcdaf2"/>
+  <rect x="70" y="132" width="62" height="8" rx="4" fill="#dcdaf2"/>
+  <rect x="70" y="156" width="60" height="22" rx="11" fill="#f2a33c"/>
+
+  <rect x="196" y="62" width="150" height="116" rx="14" fill="#ffffff" stroke="#cfcdee" stroke-width="3"/>
+  <rect x="214" y="82" width="114" height="10" rx="5" fill="#2f2a77"/>
+  <rect x="214" y="104" width="114" height="8" rx="4" fill="#dcdaf2"/>
+  <rect x="214" y="120" width="90" height="8" rx="4" fill="#dcdaf2"/>
+  <circle cx="228" cy="154" r="12" fill="#16a394"/>
+  <circle cx="258" cy="154" r="12" fill="#f2a33c"/>
+  <circle cx="288" cy="154" r="12" fill="#5b54c9"/>
+</svg>

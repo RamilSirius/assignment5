@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" role="img">
+  <title>Graduates throwing their caps in the air on certificate day</title>
+  <defs>
+    <linearGradient id="gradSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5b54c9"/>
+      <stop offset="100%" stop-color="#efeefc"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#gradSky)"/>
+
+  <!-- thrown caps -->
+  <g>
+    <path d="M56 58 L92 44 L128 58 L92 72 Z" fill="#2f2a77"/>
+    <line x1="128" y1="58" x2="128" y2="78" stroke="#f2a33c" stroke-width="3"/>
+    <circle cx="128" cy="82" r="5" fill="#f2a33c"/>
+  </g>
+  <g transform="rotate(-18 220 40)">
+    <path d="M184 40 L220 26 L256 40 L220 54 Z" fill="#2f2a77"/>
+    <line x1="256" y1="40" x2="256" y2="58" stroke="#f2a33c" stroke-width="3"/>
+    <circle cx="256" cy="62" r="5" fill="#f2a33c"/>
+  </g>
+  <g transform="rotate(14 318 72)">
+    <path d="M286 72 L318 60 L350 72 L318 84 Z" fill="#2f2a77"/>
+    <line x1="350" y1="72" x2="350" y2="88" stroke="#f2a33c" stroke-width="3"/>
+    <circle cx="350" cy="92" r="4.5" fill="#f2a33c"/>
+  </g>
+
+  <!-- confetti -->
+  <rect x="70" y="112" width="8" height="8" rx="2" fill="#16a394" transform="rotate(25 74 116)"/>
+  <rect x="330" y="132" width="8" height="8" rx="2" fill="#f2a33c" transform="rotate(-15 334 136)"/>
+  <rect x="180" y="96" width="7" height="7" rx="2" fill="#ffffff" transform="rotate(35 183 99)"/>
+  <rect x="260" y="122" width="7" height="7" rx="2" fill="#16a394" transform="rotate(-30 263 125)"/>
+
+  <!-- graduates -->
+  <g>
+    <circle cx="94" cy="178" r="26" fill="#ffe0b8"/>
+    <path d="M94 208 c-26 0 -46 16 -46 38 v54 h92 v-54 c0 -22 -20 -38 -46 -38 z" fill="#2f2a77"/>
+    <path d="M94 208 l-12 22 l12 14 l12 -14 z" fill="#f2a33c"/>
+  </g>
+  <g>
+    <circle cx="200" cy="164" r="28" fill="#f6d3ae"/>
+    <path d="M200 196 c-28 0 -48 17 -48 40 v64 h96 v-64 c0 -23 -20 -40 -48 -40 z" fill="#16a394"/>
+    <path d="M200 196 l-13 24 l13 15 l13 -15 z" fill="#ffffff"/>
+  </g>
+  <g>
+    <circle cx="306" cy="182" r="26" fill="#f9dcc0"/>
+    <path d="M306 212 c-26 0 -46 16 -46 38 v50 h92 v-50 c0 -22 -20 -38 -46 -38 z" fill="#413c9e"/>
+    <path d="M306 212 l-12 22 l12 14 l12 -14 z" fill="#f2a33c"/>
+  </g>
+</svg>

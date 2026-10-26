@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="400" height="240" role="img">
+  <title>Smartphone showing an app interface for the mobile development course</title>
+  <rect width="400" height="240" fill="#d6f1ec"/>
+  <circle cx="330" cy="190" r="58" fill="#16a394" opacity="0.3"/>
+  <rect x="148" y="26" width="104" height="188" rx="18" fill="#2f2a77"/>
+  <rect x="158" y="44" width="84" height="152" rx="8" fill="#ffffff"/>
+  <rect x="170" y="58" width="48" height="8" rx="4" fill="#5b54c9"/>
+  <rect x="170" y="76" width="60" height="30" rx="6" fill="#dcdaf2"/>
+  <rect x="170" y="114" width="60" height="8" rx="4" fill="#dcdaf2"/>
+  <rect x="170" y="130" width="40" height="8" rx="4" fill="#dcdaf2"/>
+  <rect x="170" y="154" width="60" height="22" rx="11" fill="#f2a33c"/>
+  <circle cx="200" cy="206" r="5" fill="#ffffff"/>
+</svg>

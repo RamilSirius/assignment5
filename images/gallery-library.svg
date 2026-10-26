@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" role="img">
+  <title>Library corner with bookshelves and a student reading</title>
+  <rect width="400" height="300" fill="#fbe6c8"/>
+
+  <!-- bookshelf -->
+  <rect x="34" y="24" width="222" height="252" rx="6" fill="#2f2a77"/>
+  <rect x="44" y="34" width="202" height="68" fill="#efeefc"/>
+  <rect x="44" y="112" width="202" height="68" fill="#efeefc"/>
+  <rect x="44" y="190" width="202" height="68" fill="#efeefc"/>
+
+  <!-- books row 1 -->
+  <g>
+    <rect x="52" y="44" width="16" height="50" rx="2" fill="#5b54c9"/>
+    <rect x="72" y="50" width="14" height="44" rx="2" fill="#16a394"/>
+    <rect x="90" y="40" width="18" height="54" rx="2" fill="#f2a33c"/>
+    <rect x="112" y="48" width="14" height="46" rx="2" fill="#2f2a77"/>
+    <rect x="130" y="44" width="16" height="50" rx="2" fill="#16a394"/>
+    <rect x="152" y="70" width="80" height="24" rx="3" fill="#5b54c9"/>
+  </g>
+  <!-- books row 2 -->
+  <g>
+    <rect x="52" y="124" width="14" height="48" rx="2" fill="#f2a33c"/>
+    <rect x="70" y="118" width="18" height="54" rx="2" fill="#2f2a77"/>
+    <rect x="92" y="126" width="14" height="46" rx="2" fill="#5b54c9"/>
+    <rect x="110" y="120" width="16" height="52" rx="2" fill="#16a394"/>
+    <rect x="132" y="148" width="72" height="24" rx="3" fill="#f2a33c"/>
+    <rect x="210" y="124" width="16" height="48" rx="2" fill="#5b54c9"/>
+  </g>
+  <!-- books row 3 -->
+  <g>
+    <rect x="52" y="200" width="16" height="50" rx="2" fill="#16a394"/>
+    <rect x="72" y="206" width="14" height="44" rx="2" fill="#f2a33c"/>
+    <rect x="90" y="198" width="18" height="52" rx="2" fill="#5b54c9"/>
+    <rect x="114" y="204" width="14" height="46" rx="2" fill="#2f2a77"/>
+    <rect x="134" y="200" width="16" height="50" rx="2" fill="#f2a33c"/>
+    <rect x="156" y="226" width="76" height="24" rx="3" fill="#16a394"/>
+  </g>
+
+  <!-- reader -->
+  <circle cx="330" cy="120" r="30" fill="#ffe0b8"/>
+  <path d="M300 124 c-4 -36 14 -54 30 -54 s34 18 30 54 c-8 -8 -10 -22 -10 -32 c-12 8 -38 8 -50 0 c0 10 -2 24 -10 32 z" fill="#3a2a18"/>
+  <path d="M330 154 c-28 0 -48 17 -48 40 v40 h96 v-40 c0 -23 -20 -40 -48 -40 z" fill="#5b54c9"/>
+  <!-- open book -->
+  <path d="M286 216 h44 v34 h-44 z" fill="#ffffff"/>
+  <path d="M330 216 h44 v34 h-44 z" fill="#efeefc"/>
+  <line x1="330" y1="216" x2="330" y2="250" stroke="#c9c6ea" stroke-width="3"/>
+  <rect x="294" y="226" width="28" height="4" rx="2" fill="#dcdaf2"/>
+  <rect x="294" y="236" width="22" height="4" rx="2" fill="#dcdaf2"/>
+  <rect x="338" y="226" width="28" height="4" rx="2" fill="#dcdaf2"/>
+  <rect x="338" y="236" width="22" height="4" rx="2" fill="#dcdaf2"/>
+</svg>

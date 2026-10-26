@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" role="img">
+  <title>Instructor presenting a live class in front of a projector screen</title>
+  <rect width="400" height="300" fill="#efeefc"/>
+  <circle cx="352" cy="46" r="52" fill="#5b54c9" opacity="0.2"/>
+
+  <!-- projector screen -->
+  <rect x="112" y="34" width="228" height="128" rx="8" fill="#ffffff" stroke="#c9c6ea" stroke-width="3"/>
+  <rect x="132" y="56" width="104" height="12" rx="6" fill="#2f2a77"/>
+  <rect x="132" y="80" width="150" height="8" rx="4" fill="#dcdaf2"/>
+  <rect x="132" y="98" width="126" height="8" rx="4" fill="#dcdaf2"/>
+  <rect x="132" y="122" width="72" height="20" rx="10" fill="#f2a33c"/>
+  <rect x="264" y="80" width="56" height="62" rx="6" fill="#16a394" opacity="0.85"/>
+
+  <!-- instructor -->
+  <circle cx="62" cy="122" r="26" fill="#f6d3ae"/>
+  <path d="M36 118 a26 26 0 0 1 52 0 c0 -18 -12 -28 -26 -28 s-26 10 -26 28 z" fill="#3a2a18"/>
+  <path d="M62 152 c-24 0 -42 14 -42 34 v40 h84 v-40 c0 -20 -18 -34 -42 -34 z" fill="#2f2a77"/>
+  <path d="M84 168 l40 -12 l4 12 l-40 14 z" fill="#f6d3ae"/>
+
+  <!-- audience row -->
+  <rect x="0" y="238" width="400" height="62" fill="#dcdaf2"/>
+  <g>
+    <circle cx="150" cy="238" r="20" fill="#16a394"/>
+    <path d="M150 262 c-20 0 -34 12 -34 28 v10 h68 v-10 c0 -16 -14 -28 -34 -28 z" fill="#413c9e"/>
+    <circle cx="238" cy="244" r="18" fill="#f2a33c"/>
+    <path d="M238 266 c-18 0 -32 11 -32 26 v8 h64 v-8 c0 -15 -14 -26 -32 -26 z" fill="#2f2a77"/>
+    <circle cx="322" cy="238" r="20" fill="#5b54c9"/>
+    <path d="M322 262 c-20 0 -34 12 -34 28 v10 h68 v-10 c0 -16 -14 -28 -34 -28 z" fill="#16a394"/>
+  </g>
+</svg>

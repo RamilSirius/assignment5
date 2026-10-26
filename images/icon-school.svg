@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img">
+  <title>Backpack icon representing school students</title>
+  <circle cx="60" cy="60" r="56" fill="#efeefc"/>
+  <path d="M38 44 a22 22 0 0 1 44 0 v44 a6 6 0 0 1 -6 6 h-32 a6 6 0 0 1 -6 -6 z" fill="#5b54c9"/>
+  <path d="M48 44 a12 12 0 0 1 24 0" fill="none" stroke="#2f2a77" stroke-width="4"/>
+  <rect x="46" y="62" width="28" height="22" rx="4" fill="#ffffff"/>
+  <rect x="52" y="70" width="16" height="4" rx="2" fill="#5b54c9"/>
+  <rect x="38" y="54" width="44" height="6" fill="#f2a33c"/>
+  <circle cx="60" cy="98" r="6" fill="#16a394"/>
+</svg>

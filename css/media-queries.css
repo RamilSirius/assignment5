@@ -1,0 +1,377 @@
+/* ==========================================================================
+   EduSphere — Assignment #3, Part 1 (Media Queries)
+   Team: The Ethernet (Group SE-2510)
+   Used by: task1-typography.html, task2-cards.html
+
+   NO BOOTSTRAP on these two pages — plain CSS only.
+
+   Approach: MOBILE FIRST.
+   The base rules (outside any @media) are written for phones.
+   Then min-width media queries add changes for bigger screens:
+
+       mobile  :   0px – 767px    (base styles, no media query)
+       tablet  : 768px – 1023px   @media (min-width: 768px)
+       desktop : 1024px and up    @media (min-width: 1024px)
+
+   TABLE OF CONTENTS
+   01. Variables and reset
+   02. Page header, navigation and footer
+   03. Breakpoint indicator (shows which media query is active)
+   04. TASK 1 — responsive typography
+   05. TASK 2 — card group (3 / 2 / 1 per row)
+   06. Media queries: tablet
+   07. Media queries: desktop
+   ========================================================================== */
+
+
+/* ==========================================================================
+   01. VARIABLES AND RESET
+   ========================================================================== */
+:root {
+  --indigo: #2f2a77;
+  --indigo-light: #5b54c9;
+  --amber: #f2a33c;
+  --tint: #efeefc;
+  --page: #f7f7fb;
+  --text: #1b1c3a;
+  --muted: #5a5b78;
+  --border: #e2e2ef;
+
+  --font-body: "Segoe UI", Tahoma, Verdana, Geneva, sans-serif;
+  --font-heading: Georgia, "Times New Roman", serif;
+
+  /* TASK 1: font sizes live in variables.
+     Mobile values here, the media queries below overwrite them. */
+  --fs-h1: 1.75rem;     /* 28px on mobile */
+  --fs-h2: 1.35rem;     /* ~22px */
+  --fs-h3: 1.1rem;      /* ~18px */
+  --fs-body: 0.95rem;   /* ~15px */
+  --fs-small: 0.8rem;
+
+  --page-padding: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--page);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: var(--indigo-light);
+}
+
+a:focus-visible {
+  outline: 3px solid var(--amber);
+  outline-offset: 2px;
+}
+
+.page {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 1.5rem var(--page-padding);
+}
+
+
+/* ==========================================================================
+   02. HEADER, NAVIGATION AND FOOTER
+   ========================================================================== */
+.site-header {
+  background: var(--indigo);
+  border-bottom: 3px solid var(--amber);
+  color: #fff;
+}
+
+.site-header .inner {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0.75rem var(--page-padding);
+  display: flex;
+  flex-direction: column;       /* mobile: logo above the links */
+  gap: 0.75rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: #fff;
+  text-decoration: none;
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.task-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+}
+
+.task-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.task-nav a:hover {
+  text-decoration: underline;
+}
+
+.task-nav a[aria-current="page"] {
+  color: var(--amber);
+}
+
+.site-footer {
+  background: var(--indigo);
+  color: rgba(255, 255, 255, 0.85);
+  border-top: 3px solid var(--amber);
+  margin-top: 2rem;
+}
+
+.site-footer .inner {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 1.5rem var(--page-padding);
+  font-size: var(--fs-small);
+}
+
+.site-footer h2 {
+  font-family: var(--font-heading);
+  color: #fff;
+  font-size: 1.05rem;
+  margin: 0 0 0.5rem;
+}
+
+.site-footer ul {
+  margin: 0 0 1rem;
+  padding-left: 1.1rem;
+}
+
+
+/* ==========================================================================
+   03. BREAKPOINT INDICATOR
+   A small label whose text is changed by the media queries — during the
+   defense you resize the browser and see which query is active.
+   ========================================================================== */
+.breakpoint {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  background: var(--amber);
+  color: var(--text);
+  font-size: var(--fs-small);
+  font-weight: 700;
+}
+
+.breakpoint::after {
+  content: "Mobile view (under 768px)";
+}
+
+
+/* ==========================================================================
+   04. TASK 1 — RESPONSIVE TYPOGRAPHY
+   All sizes come from the variables in :root.
+   ========================================================================== */
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+  line-height: 1.25;
+  margin: 0 0 0.6em;
+}
+
+h1 { font-size: var(--fs-h1); }
+h2 { font-size: var(--fs-h2); margin-top: 1.5em; }
+h3 { font-size: var(--fs-h3); }
+
+p {
+  margin: 0 0 1em;
+  max-width: 70ch;           /* comfortable line length */
+}
+
+.lead {
+  font-size: calc(var(--fs-body) * 1.15);
+  color: var(--muted);
+}
+
+/* table that shows the current sizes next to each other */
+.size-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  margin: 1rem 0;
+  font-size: var(--fs-small);
+}
+
+.size-table caption {
+  text-align: left;
+  color: var(--muted);
+  padding-bottom: 0.5rem;
+}
+
+.size-table th,
+.size-table td {
+  border: 1px solid var(--border);
+  padding: 0.5rem 0.6rem;
+  text-align: left;
+}
+
+.size-table thead {
+  background: var(--indigo);
+  color: #fff;
+}
+
+.table-wrap {
+  overflow-x: auto;          /* table scrolls sideways on a small phone */
+}
+
+.sample {
+  background: #fff;
+  border-left: 4px solid var(--amber);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin: 1.25rem 0;
+}
+
+
+/* ==========================================================================
+   05. TASK 2 — CARD GROUP
+   Mobile: one column, cards stacked vertically.
+   ========================================================================== */
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr;            /* mobile: 1 card per row */
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.course-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(47, 42, 119, 0.1);
+}
+
+.course-card img {
+  width: 100%;
+  aspect-ratio: 5 / 3;
+  object-fit: cover;
+  background: var(--tint);
+}
+
+.course-card .body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;              /* body fills the card so the button sits at the bottom */
+  padding: 1rem 1.25rem 1.25rem;
+}
+
+.course-card h3 {
+  margin-bottom: 0.4rem;
+}
+
+.course-card p {
+  color: var(--muted);
+}
+
+.level {
+  align-self: flex-start;
+  background: var(--tint);
+  color: var(--indigo);
+  font-size: var(--fs-small);
+  font-weight: 700;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  margin-bottom: 0.6rem;
+}
+
+.card-link {
+  margin-top: auto;          /* pushes the link to the bottom of the card */
+  align-self: flex-start;
+  background: var(--indigo);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+}
+
+.card-link:hover {
+  background: var(--indigo-light);
+}
+
+
+/* ==========================================================================
+   06. MEDIA QUERY — TABLET (768px and wider)
+   ========================================================================== */
+@media (min-width: 768px) {
+  :root {
+    /* TASK 1: medium font sizes */
+    --fs-h1: 2.25rem;    /* 36px */
+    --fs-h2: 1.6rem;
+    --fs-h3: 1.2rem;
+    --fs-body: 1rem;     /* 16px */
+    --fs-small: 0.85rem;
+    --page-padding: 1.5rem;
+  }
+
+  .breakpoint::after {
+    content: "Tablet view (768px – 1023px)";
+  }
+
+  .site-header .inner {
+    flex-direction: row;               /* logo and links in one line */
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  /* TASK 2: two cards in a row */
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* ==========================================================================
+   07. MEDIA QUERY — DESKTOP (1024px and wider)
+   ========================================================================== */
+@media (min-width: 1024px) {
+  :root {
+    /* TASK 1: large font sizes */
+    --fs-h1: 3rem;       /* 48px */
+    --fs-h2: 2rem;
+    --fs-h3: 1.35rem;
+    --fs-body: 1.125rem; /* 18px */
+    --fs-small: 0.9rem;
+    --page-padding: 2rem;
+  }
+
+  .breakpoint::after {
+    content: "Desktop view (1024px and wider)";
+  }
+
+  /* TASK 2: all three cards side by side */
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

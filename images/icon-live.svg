@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img">
+  <title>Play button icon for live video lessons</title>
+  <circle cx="60" cy="60" r="56" fill="#efeefc"/>
+  <rect x="24" y="36" width="56" height="44" rx="8" fill="#2f2a77"/>
+  <path d="M86 50 L102 40 v40 L86 70 z" fill="#f2a33c"/>
+  <path d="M44 48 l20 10 l-20 10 z" fill="#ffffff"/>
+  <rect x="24" y="90" width="56" height="6" rx="3" fill="#5b54c9"/>
+</svg>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- =====================================================================
+       Project : EduSphere — Online Educational Platform
+       Team    : The Ethernet (Group SE-2510)
+       Members : Ramil Zhunussov, Maxim Batyushkin, Azamat Mustafin
+       Page    : task2-cards.html — Assignment #3, Part 1, Task 2
+       Note    : NO Bootstrap on this page. Plain CSS + media queries
+                 from css/media-queries.css (mobile-first).
+       ===================================================================== -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Assignment #3 Task 2: three cards that show 3, 2 or 1 per row using only CSS media queries.">
+  <meta name="author" content="The Ethernet">
+  <title>Task 2: Card Group — EduSphere</title>
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/media-queries.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="inner">
+      <a class="brand" href="index.html">
+        <img src="images/logo.svg" alt="EduSphere logo" width="36" height="36">
+        EduSphere
+      </a>
+      <nav class="task-nav" aria-label="Assignment #3 pages">
+        <ul>
+          <li><a href="index.html">Back to EduSphere</a></li>
+          <li><a href="task1-typography.html">Task 1: Typography</a></li>
+          <li><a href="task2-cards.html" aria-current="page">Task 2: Card group</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <!-- the text of this label is set by the media queries (::after) -->
+    <p class="breakpoint" aria-hidden="true"></p>
+
+    <h1>Card group with media queries</h1>
+
+    <p class="lead">
+      Three course cards laid out with CSS Grid and media queries only, no
+      Bootstrap. Resize the window to see the layout change.
+    </p>
+
+    <ul>
+      <li><strong>Desktop (1024px+):</strong> all three cards side by side.</li>
+      <li><strong>Tablet (768px – 1023px):</strong> two cards in a row.</li>
+      <li><strong>Mobile (under 768px):</strong> cards stacked vertically.</li>
+    </ul>
+
+    <!-- TASK 2: grid-template-columns is 1fr on mobile,
+         repeat(2, 1fr) on tablet and repeat(3, 1fr) on desktop -->
+    <section class="card-grid" aria-label="Popular courses">
+
+      <article class="course-card">
+        <img src="images/course-web.svg" alt="Browser window representing the HTML and CSS course">
+        <div class="body">
+          <span class="level">Beginner · 8 weeks</span>
+          <h3>HTML &amp; CSS Foundations</h3>
+          <p>Semantic markup, the box model and responsive layouts from zero.</p>
+          <a class="card-link" href="courses.html">Course details</a>
+        </div>
+      </article>
+
+      <article class="course-card">
+        <img src="images/course-js.svg" alt="Code editor showing a JavaScript function">
+        <div class="body">
+          <span class="level">Intermediate · 10 weeks</span>
+          <h3>JavaScript in Practice</h3>
+          <p>The DOM, events, fetch requests and a single-page application.</p>
+          <a class="card-link" href="courses.html">Course details</a>
+        </div>
+      </article>
+
+      <article class="course-card">
+        <img src="images/course-data.svg" alt="Dashboard with bar and pie charts">
+        <div class="body">
+          <span class="level">Intermediate · 12 weeks</span>
+          <h3>Data Analytics with SQL</h3>
+          <p>Queries, joins, dashboards and telling a story with numbers.</p>
+          <a class="card-link" href="courses.html">Course details</a>
+        </div>
+      </article>
+    </section>
+
+  </main>
+
+  <!-- Assignment rule: names of all team members in the <footer> -->
+  <footer class="site-footer">
+    <div class="inner">
+      <h2>The Ethernet — Group SE-2510</h2>
+      <ul>
+        <li>Ramil Zhunussov</li>
+        <li>Maxim Batyushkin</li>
+        <li>Azamat Mustafin</li>
+      </ul>
+      <p>&copy; 2026 EduSphere · Astana IT University · Front-End Development, Assignment #3.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

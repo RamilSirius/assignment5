@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240" role="img">
+  <title>Portrait of the front-end instructor</title>
+  <rect width="240" height="240" fill="#efeefc"/>
+  <circle cx="120" cy="120" r="120" fill="#2f2a77"/>
+  <circle cx="120" cy="98" r="44" fill="#f6d3ae"/>
+  <path d="M76 96 c0 -34 20 -54 44 -54 s44 20 44 54 c0 -18 -18 -26 -44 -26 s-44 8 -44 26 z" fill="#4a3520"/>
+  <rect x="86" y="90" width="30" height="20" rx="8" fill="none" stroke="#2f2a77" stroke-width="4"/>
+  <rect x="124" y="90" width="30" height="20" rx="8" fill="none" stroke="#2f2a77" stroke-width="4"/>
+  <line x1="116" y1="100" x2="124" y2="100" stroke="#2f2a77" stroke-width="4"/>
+  <path d="M120 148 c-42 0 -72 24 -72 56 v36 h144 v-36 c0 -32 -30 -56 -72 -56 z" fill="#16a394"/>
+  <path d="M120 148 l-14 22 l14 16 l14 -16 z" fill="#f2a33c"/>
+</svg>

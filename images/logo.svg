@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img">
+  <title>EduSphere logo</title>
+  <circle cx="32" cy="32" r="30" fill="#2f2a77"/>
+  <circle cx="32" cy="32" r="22" fill="none" stroke="#5b54c9" stroke-width="2"/>
+  <path d="M14 26 L32 17 L50 26 L32 35 Z" fill="#f2a33c"/>
+  <path d="M20 30 v10 c0 5 6 8 12 8 s12 -3 12 -8 v-10 l-12 6 z" fill="#ffffff"/>
+  <circle cx="32" cy="32" r="30" fill="none" stroke="#f2a33c" stroke-width="3"/>
+</svg>

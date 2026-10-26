@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="400" height="240" role="img">
+  <title>Terminal window illustrating the Python programming course</title>
+  <rect width="400" height="240" fill="#d6f1ec"/>
+  <circle cx="60" cy="46" r="50" fill="#16a394" opacity="0.35"/>
+  <rect x="60" y="54" width="280" height="132" rx="12" fill="#12332f"/>
+  <g font-family="Consolas, monospace" font-size="16">
+    <text x="82" y="94" fill="#16a394">$ python3 main.py</text>
+    <text x="82" y="122" fill="#ffffff">Hello, EduSphere!</text>
+    <text x="82" y="150" fill="#f2a33c">&gt;&gt;&gt; _</text>
+  </g>
+  <rect x="60" y="196" width="130" height="12" rx="6" fill="#16a394"/>
+  <rect x="200" y="196" width="80" height="12" rx="6" fill="#2f2a77" opacity="0.4"/>
+</svg>

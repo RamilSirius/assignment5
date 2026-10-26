@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- =====================================================================
+       Project : EduSphere — Online Educational Platform
+       Team    : The Ethernet (Group SE-2510)
+       Members : Ramil Zhunussov, Maxim Batyushkin, Azamat Mustafin
+       Page    : contact.html — Registration &amp; contact
+       Author  : Azamat Mustafin
+       Course  : Front-End Development — Assignment #3
+                 (Media Queries + Bootstrap Grid)
+       Styles  : Bootstrap 5.3 (CDN) + css/bootstrap-theme.css (colours only)
+
+       ASSIGNMENT #3 TASKS ON THIS PAGE
+       Task 3  Grid      -> form col-lg-7 + details col-lg-5,
+                            name/email fields col-md-6, page col-lg-9 / col-lg-3
+       Task 4  Spacing   -> only m-* / p-* / g-* / gap-* utilities
+       Task 5  Navbar    -> shared Bootstrap navbar
+       Task 6  Buttons   -> btn-primary btn-lg, btn-outline-secondary, btn-sm
+       Task 9  Form      -> form-control, form-select, input-group, form-check
+                            (radio, checkbox, switch), form-control-color,
+                            Bootstrap validation (was-validated)
+       Task 10 A11y      -> every input has <label>, aria-describedby hints,
+                            fieldset + legend for the radio group
+       ===================================================================== -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Register for an EduSphere course or ask a question using our contact form. Campus address, phone numbers and answers to frequent questions.">
+  <meta name="author" content="The Ethernet">
+  <title>Contact &amp; Registration — EduSphere</title>
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.css">
+  <link rel="stylesheet" href="css/interactive.css">
+</head>
+<body>
+
+  <!-- TASK 10: Bootstrap helper — hidden until it receives keyboard focus -->
+  <a class="visually-hidden-focusable position-absolute top-0 start-0 m-2 p-2 bg-warning text-dark rounded z-3" href="#main">Skip to main content</a>
+
+  <!-- ============================ TASK 5 · NAVBAR ========================
+       navbar-expand-lg : links in a row from 992px, hamburger below that
+       data-bs-theme="dark" : light text and a white toggler icon
+       ===================================================================== -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-edu border-bottom border-3 border-warning py-2" data-bs-theme="dark" aria-label="Main navigation">
+      <div class="container-fluid px-3 px-lg-4">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+          <img src="images/logo.svg" alt="EduSphere logo: a graduation cap inside a circle" width="44" height="44">
+          <span class="d-flex flex-column lh-1">
+            <span class="fs-4 fw-bold font-serif">EduSphere</span>
+            <small class="text-warning text-uppercase brand-tagline mt-1">Learn · Practise · Grow</small>
+          </span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2 fw-semibold py-3 py-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+            <li class="nav-item"><a class="nav-link" href="instructors.html">Instructors</a></li>
+            <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+            <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+              <a class="btn btn-warning fw-semibold px-3 shadow-sm active" aria-current="page" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item ms-lg-1 mt-2 mt-lg-0">
+              <!-- ASSIGNMENT #5: Day / Night theme switch (js/main.js) -->
+              <button id="theme-toggle" class="btn btn-outline-light btn-sm" type="button" aria-label="Switch to night theme">🌙</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===================== TASK 3 · PAGE GRID ===========================
+       main col-lg-9 + sidebar col-lg-3 (sidebar painted left with order-lg-first)
+       ===================================================================== -->
+  <div class="container-fluid">
+    <div class="row">
+
+      <main id="main" class="col-lg-9 px-3 px-sm-4 px-lg-5">
+
+        <section class="py-4 py-lg-5" aria-labelledby="contact-title">
+          <img class="img-fluid rounded-4 mb-4" src="images/banner-contact.svg" alt="Envelope, chat bubbles and a support headset representing contact options">
+
+          <h1 id="contact-title" class="fw-bold">Registration &amp; contact</h1>
+          <p class="lead text-secondary mb-4">
+            Fill in the form below to reserve a place in the next cohort or just
+            to ask a question. A mentor replies within one working day between
+            <mark class="px-1 rounded">09:00 and 18:00</mark>, Monday to Friday.
+          </p>
+
+          <div class="row g-4 g-lg-5">
+
+            <!-- ================== TASK 9 · THE FORM (col-lg-7) ================== -->
+            <div class="col-12 col-lg-7">
+              <!-- novalidate: the browser bubbles are switched off and Bootstrap
+                   shows its own red/green messages (.invalid-feedback) instead -->
+              <form id="contact-form" class="bg-white rounded-4 shadow-sm p-3 p-sm-4" action="#" method="post" novalidate>
+                <h2 class="h4 fw-bold">Course registration</h2>
+                <p class="small text-secondary mb-4">Fields marked with * are required.</p>
+
+                <div class="row g-3">
+                  <!-- Text input -->
+                  <div class="col-12 col-md-6">
+                    <label for="full-name" class="form-label">Full name *</label>
+                    <input type="text" class="form-control" id="full-name" name="full-name"
+                           placeholder="Aisulu Amangeldy" required minlength="3">
+                    <div class="invalid-feedback">Enter at least 3 characters.</div>
+                  </div>
+
+                  <!-- Email: input-group with an "@" addon -->
+                  <div class="col-12 col-md-6">
+                    <label for="email" class="form-label">Email address *</label>
+                    <div class="input-group has-validation">
+                      <span class="input-group-text" id="email-addon">@</span>
+                      <input type="email" class="form-control" id="email" name="email"
+                             placeholder="student@example.com" required
+                             aria-describedby="email-addon email-hint">
+                      <div class="invalid-feedback">Enter a valid email address.</div>
+                    </div>
+                    <div id="email-hint" class="form-text">We send the group invitation to this address.</div>
+                  </div>
+
+                  <!-- Phone: input-group with a country code -->
+                  <div class="col-12 col-md-6">
+                    <label for="phone" class="form-label">Phone number</label>
+                    <div class="input-group">
+                      <span class="input-group-text">+7</span>
+                      <input type="tel" class="form-control" id="phone" name="phone" placeholder="(700) 000-00-00">
+                    </div>
+                  </div>
+
+                  <!-- Dropdown -->
+                  <div class="col-12 col-md-6">
+                    <label for="course" class="form-label">Course you are interested in *</label>
+                    <select class="form-select" id="course" name="course" required>
+                      <option value="">Choose a course</option>
+                      <option value="html-css">HTML &amp; CSS Foundations</option>
+                      <option value="javascript">JavaScript in Practice</option>
+                      <option value="python">Python for Everyone</option>
+                      <option value="sql">Data Analytics with SQL</option>
+                      <option value="ux">UX &amp; UI Design Basics</option>
+                      <option value="mobile">Mobile Development</option>
+                      <option value="instructor">Becoming an instructor</option>
+                    </select>
+                    <div class="invalid-feedback">Choose one of the courses.</div>
+                  </div>
+
+                  <!-- Radio buttons: fieldset + legend = one question for screen readers -->
+                  <fieldset class="col-12">
+                    <legend class="form-label fs-6 mb-2">Preferred study format *</legend>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="format" id="format-evening" value="evening" checked>
+                      <label class="form-check-label" for="format-evening">Evening (18:00 / 20:00)</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="format" id="format-weekend" value="weekend">
+                      <label class="form-check-label" for="format-weekend">Weekend (Saturday)</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="format" id="format-intensive" value="intensive">
+                      <label class="form-check-label" for="format-intensive">Intensive (daytime)</label>
+                    </div>
+                  </fieldset>
+
+                  <!-- Colour picker -->
+                  <div class="col-12">
+                    <label for="theme-color" class="form-label">Accent colour for your student profile</label>
+                    <div class="d-flex align-items-center gap-3">
+                      <input type="color" class="form-control form-control-color" id="theme-color" name="theme-color" value="#2f2a77" aria-describedby="color-hint">
+                      <span id="color-hint" class="form-text mt-0">Pick the colour of your personal dashboard.</span>
+                    </div>
+                  </div>
+
+                  <!-- Textarea -->
+                  <div class="col-12">
+                    <label for="message" class="form-label">Your message *</label>
+                    <textarea class="form-control" id="message" name="message" rows="5"
+                              placeholder="Tell us about your current level and what you want to achieve..." required></textarea>
+                    <div class="invalid-feedback">Write a short message for the mentor.</div>
+                  </div>
+
+                  <!-- Checkbox (switch style) + required checkbox -->
+                  <div class="col-12">
+                    <div class="form-check form-switch mb-2">
+                      <input class="form-check-input" type="checkbox" role="switch" id="newsletter" name="newsletter" value="yes" checked>
+                      <label class="form-check-label" for="newsletter">Send me the weekly newsletter with free open lectures.</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="agree" name="agree" required>
+                      <label class="form-check-label" for="agree">I agree that a mentor may contact me about this application. *</label>
+                      <div class="invalid-feedback">Please confirm before sending.</div>
+                    </div>
+                  </div>
+
+                  <!-- Buttons: full width on phones, side by side from sm -->
+                  <div class="col-12 d-grid d-sm-flex gap-2 pt-2">
+                    <button type="submit" class="btn btn-primary btn-lg">Send application</button>
+                    <button type="reset" class="btn btn-outline-secondary btn-lg">Clear the form</button>
+                  </div>
+
+                  <!-- Shown by the script below after a valid submit -->
+                  <div class="col-12">
+                    <div id="form-success" class="alert alert-success d-none mb-0" role="status">
+                      Application sent. A mentor will reply within one working day.
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <!-- ================== CONTACT DETAILS (col-lg-5) ================== -->
+            <div class="col-12 col-lg-5">
+              <h2 class="h4 fw-bold mb-3">Other ways to reach us</h2>
+              <ul class="list-group mb-4">
+                <li class="list-group-item"><strong class="d-block">Campus</strong>Mangilik El avenue 55/11, block C1, room 305, Astana</li>
+                <li class="list-group-item"><strong class="d-block">Phone</strong><a href="tel:+77001234567">+7 (700) 123-45-67</a></li>
+                <li class="list-group-item"><strong class="d-block">Email</strong><a href="mailto:hello@edusphere.kz">hello@edusphere.kz</a></li>
+                <li class="list-group-item"><strong class="d-block">Working hours</strong>Monday &ndash; Friday, 09:00 &ndash; 18:00 (UTC+5)</li>
+                <li class="list-group-item"><strong class="d-block">Student support</strong>Written code review in the group chat, every working day</li>
+              </ul>
+
+              <h3 class="h5 fw-bold mb-3">What happens after you send the form</h3>
+              <ol class="list-group list-group-numbered mb-4">
+                <li class="list-group-item">You receive an automatic confirmation email.</li>
+                <li class="list-group-item">A mentor calls you to agree on the interview time.</li>
+                <li class="list-group-item">After the interview we reserve your place for 48 hours.</li>
+                <li class="list-group-item">You pay the first month and join the group chat.</li>
+              </ol>
+
+              <!-- Bootstrap accordion: each question opens on click -->
+              <h3 class="h5 fw-bold mb-3">Frequent questions</h3>
+              <div class="accordion" id="faq">
+                <div class="accordion-item">
+                  <h4 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-1" aria-expanded="false" aria-controls="faq-1">Can I change the format later?</button>
+                  </h4>
+                  <div id="faq-1" class="accordion-collapse collapse" data-bs-parent="#faq">
+                    <div class="accordion-body">Yes, once per module.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h4 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-2" aria-expanded="false" aria-controls="faq-2">Is there a trial class?</button>
+                  </h4>
+                  <div id="faq-2" class="accordion-collapse collapse" data-bs-parent="#faq">
+                    <div class="accordion-body">The first live class of every course is free.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h4 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-3" aria-expanded="false" aria-controls="faq-3">Do you issue documents for employers?</button>
+                  </h4>
+                  <div id="faq-3" class="accordion-collapse collapse" data-bs-parent="#faq">
+                    <div class="accordion-body">Yes, a certificate with a verification link.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+      </main>
+
+      <!-- =================== SIDEBAR · col-lg-3, left on desktop =================== -->
+      <aside class="col-lg-3 order-lg-first bg-white border-end px-3 px-sm-4 py-4 py-lg-5" aria-label="Before you write">
+        <div class="d-flex flex-column gap-4">
+          <div>
+            <h2 class="h6 fw-bold text-uppercase text-secondary mb-2">Before you write</h2>
+            <div class="list-group">
+              <a class="list-group-item list-group-item-action" href="courses.html">Browse the catalogue</a>
+              <a class="list-group-item list-group-item-action" href="schedule.html">Check the timetable</a>
+              <a class="list-group-item list-group-item-action" href="instructors.html">Meet the instructors</a>
+            </div>
+          </div>
+
+          <div class="card border-warning">
+            <div class="card-body">
+              <h2 class="h5 card-title">Response time</h2>
+              <p class="card-text mb-0"><strong>One working day</strong><br>
+                Monday to Friday, 09:00 &ndash; 18:00 (UTC+5). Messages sent at
+                night are answered the next morning.</p>
+            </div>
+          </div>
+
+          <div>
+            <h2 class="h6 fw-bold text-uppercase text-secondary mb-2">Trial class</h2>
+            <p class="small text-secondary">The first live class of every course is free, and no payment
+              details are asked for.</p>
+            <a class="btn btn-outline-primary btn-sm w-100" href="schedule.html">Pick a slot</a>
+          </div>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+
+  <!-- ============================ FOOTER ============================
+       Assignment rule: names of all team members in the <footer>.
+       ================================================================ -->
+  <footer class="bg-edu text-white border-top border-3 border-warning pt-5 pb-3">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <h3 class="h5">EduSphere</h3>
+          <p class="text-white text-opacity-75 mb-0">
+            A demo educational platform built for the Front-End Development course.
+            Assignment #5 adds interactivity with plain JavaScript.
+          </p>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <h3 class="h5">The Ethernet — Group SE-2510</h3>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2">Ramil Zhunussov <span class="d-block small text-white text-opacity-75">Home page &amp; Courses catalogue</span></li>
+            <li class="mb-2">Maxim Batyushkin <span class="d-block small text-white text-opacity-75">About Us, Instructors &amp; Gallery</span></li>
+            <li>Azamat Mustafin <span class="d-block small text-white text-opacity-75">Schedule &amp; Contact pages</span></li>
+          </ul>
+        </div>
+
+        <nav class="col-12 col-lg-4" aria-label="Site map">
+          <h3 class="h5">Site map</h3>
+          <ul class="list-unstyled row row-cols-2 g-1 mb-0">
+            <li class="col"><a class="link-light link-underline-opacity-0 link-underline-opacity-100-hover" href="index.html">Home</a></li>
+            <li class="col"><a class="link-light link-underline-opacity-0 link-underline-opacity-100-hover" href="courses.html">Courses</a></li>
+            <li class="col"><a class="link-light link-underline-opacity-0 link-underline-opacity-100-hover" href="instructors.html">Instructors</a></li>
+            <li class="col"><a class="link-light link-underline-opacity-0 link-underline-opacity-100-hover" href="schedule.html">Schedule</a></li>
+            <li class="col"><a class="link-light link-underline-opacity-0 link-underline-opacity-100-hover" href="gallery.html">Gallery</a></li>
+            <li class="col"><a class="link-light link-underline-opacity-0 link-underline-opacity-100-hover" href="about.html">About Us</a></li>
+            <li class="col"><a class="link-light link-underline-opacity-0 link-underline-opacity-100-hover" href="contact.html">Contact</a></li>
+            <li class="col"><a class="link-light link-underline-opacity-0 link-underline-opacity-100-hover" href="task1-typography.html">Task 1: Typography</a></li>
+            <li class="col"><a class="link-light link-underline-opacity-0 link-underline-opacity-100-hover" href="task2-cards.html">Task 2: Card group</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <p class="border-top border-light border-opacity-25 small text-white text-opacity-75 text-center pt-3 mt-4 mb-0">
+        &copy; 2026 EduSphere · Astana IT University · Created by Ramil Zhunussov,
+        Maxim Batyushkin and Azamat Mustafin.
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="js/main.js"></script>
+
+  <!-- Bootstrap form validation (Task 9) — moved to js/contact.js in Assignment #5 -->
+  <script src="js/contact.js"></script>
+</body>
+</html>

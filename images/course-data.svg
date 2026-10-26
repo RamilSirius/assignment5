@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="400" height="240" role="img">
+  <title>Dashboard with charts illustrating the data analytics course</title>
+  <rect width="400" height="240" fill="#fbe6c8"/>
+  <rect x="46" y="40" width="186" height="160" rx="12" fill="#ffffff" stroke="#e8cfa8" stroke-width="3"/>
+  <rect x="66" y="136" width="26" height="46" rx="5" fill="#5b54c9"/>
+  <rect x="102" y="112" width="26" height="70" rx="5" fill="#16a394"/>
+  <rect x="138" y="86" width="26" height="96" rx="5" fill="#f2a33c"/>
+  <rect x="174" y="124" width="26" height="58" rx="5" fill="#2f2a77"/>
+  <rect x="66" y="62" width="90" height="10" rx="5" fill="#dcdaf2"/>
+  <circle cx="310" cy="120" r="62" fill="#ffffff" stroke="#e8cfa8" stroke-width="3"/>
+  <path d="M310 120 L310 58 A62 62 0 0 1 368 142 Z" fill="#16a394"/>
+  <path d="M310 120 L368 142 A62 62 0 0 1 268 178 Z" fill="#5b54c9"/>
+  <circle cx="310" cy="120" r="24" fill="#fbe6c8"/>
+</svg>

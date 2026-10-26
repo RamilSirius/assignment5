@@ -1,0 +1,162 @@
+/* ==========================================================================
+   EduSphere — styles for the JavaScript features (Assignment #5)
+   Team: The Ethernet (Group SE-2510)
+
+   Linked after bootstrap-theme.css on every Bootstrap page.
+
+   TABLE OF CONTENTS
+   01. Night theme (html[data-bs-theme="dark"])
+   02. Rating stars
+   03. Animations triggered from JavaScript
+   04. Multi-step enrolment form
+   ========================================================================== */
+
+
+/* ==========================================================================
+   01. NIGHT THEME
+   Bootstrap switches most colours by itself; we only re-map the EduSphere
+   variables from bootstrap-theme.css. "html[...]" is more specific than
+   ":root", so these values win when the theme is dark.
+   ========================================================================== */
+html[data-bs-theme="dark"] {
+  --bs-body-bg: #12112a;
+  --bs-body-color: #e4e3f5;
+  --bs-secondary-color: #a8a7c7;
+  --bs-border-color: #34325e;
+
+  --bs-primary-rgb: 170, 164, 255;            /* text-primary readable on dark */
+  --bs-primary-bg-subtle: #1e1c45;
+  --bs-primary-border-subtle: #3a377a;
+  --bs-primary-text-emphasis: #c9c6ff;
+
+  --bs-link-color: #aaa4ff;
+  --bs-link-color-rgb: 170, 164, 255;
+  --bs-link-hover-color: #d0cdff;
+  --bs-link-hover-color-rgb: 208, 205, 255;
+}
+
+html[data-bs-theme="dark"] .card {
+  --bs-card-bg: #1b1a3b;
+}
+
+/* bg-white is a fixed colour in Bootstrap, so we repaint it for the night */
+html[data-bs-theme="dark"] .bg-white {
+  background-color: #1b1a3b !important;
+}
+
+html[data-bs-theme="dark"] .btn-outline-primary {
+  --bs-btn-color: #c9c6ff;
+  --bs-btn-border-color: #8f88f2;
+  --bs-btn-disabled-color: #c9c6ff;
+  --bs-btn-disabled-border-color: #8f88f2;
+}
+
+html[data-bs-theme="dark"] .text-bg-primary {
+  background-color: var(--edu-indigo-light) !important;
+}
+
+/* smooth fade between day and night — only after a click on the switch
+   (main.js adds .theme-animated), so pages do not flash while loading */
+.theme-animated body,
+.theme-animated .card,
+.theme-animated .list-group-item {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+
+/* ==========================================================================
+   02. RATING STARS
+   Hovering a star lights it and every star before it (preview); clicked
+   stars keep the .active class set by JavaScript.
+   ========================================================================== */
+.star {
+  padding: 0 0.1rem;
+  border: 0;
+  background: none;
+  font-size: 1.4rem;
+  line-height: 1;
+  color: #c9c8dc;
+  cursor: pointer;
+  transition: color 0.2s ease, transform 0.18s ease;
+}
+
+.star.active,
+.rating:hover .star {
+  color: var(--edu-amber);
+}
+
+.rating .star:hover ~ .star {
+  color: #c9c8dc;
+}
+
+.star:focus-visible {
+  outline: 2px solid var(--edu-indigo-light);
+  border-radius: 0.25rem;
+}
+
+
+/* ==========================================================================
+   03. ANIMATIONS (the classes are added by JavaScript)
+   ========================================================================== */
+.fade-in {
+  animation: fade-in-up 0.45s ease both;
+}
+
+.pop {
+  animation: pop 0.4s ease;
+}
+
+.shake {
+  animation: shake 0.35s ease;
+}
+
+.highlight {
+  animation: highlight 1.2s ease;
+}
+
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: none; }
+}
+
+@keyframes pop {
+  50% { transform: scale(1.06); }
+}
+
+@keyframes shake {
+  25% { transform: translateX(-6px); }
+  75% { transform: translateX(6px); }
+}
+
+@keyframes highlight {
+  from { box-shadow: 0 0 0 0 rgba(242, 163, 60, 0.9); }
+  to   { box-shadow: 0 0 0 18px rgba(242, 163, 60, 0); }
+}
+
+/* people who turn off motion in their OS settings get no animations */
+@media (prefers-reduced-motion: reduce) {
+  .fade-in, .pop, .shake, .highlight { animation: none; }
+  .star, .progress-bar { transition: none; }
+}
+
+
+/* ==========================================================================
+   04. MULTI-STEP ENROLMENT FORM
+   ========================================================================== */
+.wizard-step {
+  min-height: 9rem;
+}
+
+#enrol-form legend {
+  font-family: var(--edu-font-heading);
+}
+
+/* Bootstrap paints a disabled outline button blue; keep the brand indigo */
+.btn-outline-primary {
+  --bs-btn-disabled-color: var(--edu-indigo);
+  --bs-btn-disabled-border-color: var(--edu-indigo);
+}
+
+#confirm-btn {
+  display: none;   /* shown by JavaScript on the last step */
+}

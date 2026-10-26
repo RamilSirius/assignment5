@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" role="img">
+  <title>Students working late at a night hackathon with laptops and coffee</title>
+  <rect width="400" height="300" fill="#1b1a44"/>
+
+  <!-- night window -->
+  <rect x="236" y="26" width="132" height="110" rx="8" fill="#0f0e2e" stroke="#413c9e" stroke-width="3"/>
+  <line x1="302" y1="26" x2="302" y2="136" stroke="#413c9e" stroke-width="3"/>
+  <circle cx="272" cy="58" r="14" fill="#f2a33c"/>
+  <circle cx="330" cy="76" r="2.5" fill="#ffffff"/>
+  <circle cx="346" cy="52" r="2" fill="#ffffff"/>
+  <circle cx="318" cy="108" r="2" fill="#ffffff"/>
+
+  <!-- desk -->
+  <rect x="0" y="228" width="400" height="14" fill="#2f2a77"/>
+  <rect x="0" y="242" width="400" height="58" fill="#15142f"/>
+
+  <!-- laptop 1 -->
+  <rect x="44" y="148" width="116" height="74" rx="7" fill="#2f2a77"/>
+  <rect x="52" y="156" width="100" height="58" rx="4" fill="#16a394"/>
+  <rect x="62" y="168" width="48" height="6" rx="3" fill="#0f3d38"/>
+  <rect x="62" y="182" width="66" height="5" rx="2.5" fill="#0f3d38" opacity="0.7"/>
+  <rect x="30" y="222" width="144" height="8" rx="4" fill="#413c9e"/>
+
+  <!-- laptop 2 -->
+  <rect x="186" y="164" width="98" height="60" rx="6" fill="#2f2a77"/>
+  <rect x="193" y="171" width="84" height="46" rx="4" fill="#5b54c9"/>
+  <rect x="202" y="182" width="40" height="5" rx="2.5" fill="#2f2a77"/>
+  <rect x="202" y="194" width="56" height="5" rx="2.5" fill="#2f2a77" opacity="0.7"/>
+  <rect x="176" y="224" width="118" height="7" rx="3.5" fill="#413c9e"/>
+
+  <!-- coffee cups -->
+  <path d="M312 196 h34 l-5 32 h-24 z" fill="#ffffff"/>
+  <rect x="310" y="188" width="38" height="10" rx="5" fill="#f2a33c"/>
+  <path d="M322 178 c6 -8 -4 -12 2 -20" fill="none" stroke="#5b54c9" stroke-width="3" stroke-linecap="round"/>
+  <path d="M336 180 c6 -8 -4 -12 2 -18" fill="none" stroke="#5b54c9" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- sticky notes -->
+  <rect x="96" y="44" width="52" height="46" rx="4" fill="#f2a33c" transform="rotate(-6 122 67)"/>
+  <rect x="156" y="62" width="48" height="42" rx="4" fill="#16a394" transform="rotate(5 180 83)"/>
+  <rect x="44" y="82" width="44" height="40" rx="4" fill="#5b54c9" transform="rotate(8 66 102)"/>
+</svg>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us — EduSphere</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/interactive.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-edu border-bottom border-3 border-warning py-2" data-bs-theme="dark" aria-label="Main navigation">
+      <div class="container-fluid px-3 px-lg-4">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+          <img src="images/logo.svg" alt="EduSphere logo: a graduation cap inside a circle" width="44" height="44">
+          <span class="d-flex flex-column lh-1">
+            <span class="fs-4 fw-bold font-serif">EduSphere</span>
+            <small class="text-warning text-uppercase brand-tagline mt-1">Learn · Practise · Grow</small>
+          </span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2 fw-semibold py-3 py-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+            <li class="nav-item"><a class="nav-link" href="instructors.html">Instructors</a></li>
+            <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="about.html">About Us</a></li>
+            <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+              <a class="btn btn-warning fw-semibold px-3 shadow-sm" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item ms-lg-1 mt-2 mt-lg-0">
+              <!-- ASSIGNMENT #5: Day / Night theme switch (js/main.js) -->
+              <button id="theme-toggle" class="btn btn-outline-light btn-sm" type="button" aria-label="Switch to night theme">🌙</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="py-3">
+      <div class="container">
+        <div class="row mt-4">
+          <div class="col-lg-6">
+            <h1 class="display-3">Our mission</h1>
+            <h1 class="display-4">Make practice the centre of the course, not a bonus</h1>
+            <p>On most platforms a student watches for ten hours and writes code for one. We invert that ratio. Each EduSphere module contains one short theory block and three practical tasks, and no one moves on until the mentor has accepted the work.</p>
+            <p>Everything you see on this site is written by hand: seven HTML pages built with Bootstrap 5 and its 12-column grid, plus a small theme file with our own colours. Two extra demo pages show the same responsive ideas with plain CSS media queries.</p>
+
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-3">Our story</h1>
+            <h1 class="display-4">From an idea to a published website</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section>
+      <div class="container">
+
+      <div class="row">
+      
+      <div class="col-lg-4">
+      <div class="card">
+        <img class="card-img-top" src="images/avatar-member-1.svg" alt="Maxim">
+        <div class="card-body">
+          <h5 class="card-title">
+            Ramil Zhunusov
+          </h5>
+          <p class="card-text">
+            Team-Lead & Front-end
+          </p>
+        </div>
+        </div>
+        
+
+      </div>
+      <div class="col-lg-4">
+      <div class="card">
+        <img class="card-img-top" src="images/avatar-member-2.svg" alt="Maxim">
+        <div class="card-body">
+          <h5 class="card-title">
+            Maxim Batyushkin
+          </h5>
+          <p class="card-text">
+            Content & Layout
+          </p>
+        </div>
+        </div>
+
+        
+
+      </div>
+
+      <div class="col-lg-4">
+      <div class="card">
+        <img class="card-img-top" src="images/avatar-member-3.svg" alt="Maxim">
+        <div class="card-body">
+          <h5 class="card-title">
+            Azamat Mustafin
+          </h5>
+          <p class="card-text">
+            Tables & form
+          </p>
+        </div>
+        </div>
+      </div>
+      </div>
+      </div> 
+
+    </section>
+  </main>
+  <footer class="bg-dark text-white text-center py-3 mt-4">
+  <div class="container">
+    <p class="mb-0">&copy; 2026 EduSphere · The Ethernet — Group SE-2510 · Ramil Zhunussov, Maxim Batyushkin, Azamat Mustafin</p>
+    <p class="text-success">Give us hundred please</p>
+  </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

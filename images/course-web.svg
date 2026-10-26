@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="400" height="240" role="img">
+  <title>Browser window illustrating the HTML and CSS foundations course</title>
+  <rect width="400" height="240" fill="#efeefc"/>
+  <circle cx="340" cy="40" r="54" fill="#5b54c9" opacity="0.25"/>
+  <rect x="56" y="48" width="288" height="150" rx="12" fill="#ffffff" stroke="#cfcdee" stroke-width="3"/>
+  <rect x="56" y="48" width="288" height="32" rx="12" fill="#2f2a77"/>
+  <circle cx="78" cy="64" r="6" fill="#f2a33c"/>
+  <circle cx="96" cy="64" r="6" fill="#16a394"/>
+  <circle cx="114" cy="64" r="6" fill="#ffffff" opacity="0.6"/>
+  <rect x="76" y="98" width="110" height="12" rx="6" fill="#5b54c9"/>
+  <rect x="76" y="122" width="180" height="8" rx="4" fill="#dcdaf2"/>
+  <rect x="76" y="140" width="150" height="8" rx="4" fill="#dcdaf2"/>
+  <rect x="76" y="164" width="72" height="20" rx="10" fill="#f2a33c"/>
+  <rect x="266" y="98" width="58" height="86" rx="8" fill="#16a394" opacity="0.85"/>
+</svg>

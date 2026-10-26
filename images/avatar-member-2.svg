@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240" role="img">
+  <title>Avatar of team member 2</title>
+  <rect width="240" height="240" fill="#d6f1ec"/>
+  <circle cx="120" cy="120" r="120" fill="#16a394"/>
+  <circle cx="120" cy="96" r="46" fill="#f6d3ae"/>
+  <path d="M70 100 c0 -36 22 -58 50 -58 s50 22 50 58 c-6 -22 -22 -30 -50 -30 s-44 8 -50 30 z" fill="#1f1a12"/>
+  <path d="M120 146 c-42 0 -72 24 -72 56 v38 h144 v-38 c0 -32 -30 -56 -72 -56 z" fill="#2f2a77"/>
+  <circle cx="120" cy="178" r="9" fill="#f2a33c"/>
+  <circle cx="120" cy="206" r="9" fill="#f2a33c"/>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" role="img">
+  <title>Student presenting a final project on demo day</title>
+  <rect width="400" height="300" fill="#2f2a77"/>
+  <circle cx="368" cy="270" r="72" fill="#5b54c9" opacity="0.4"/>
+
+  <!-- stage screen -->
+  <rect x="140" y="26" width="230" height="150" rx="10" fill="#ffffff"/>
+  <rect x="158" y="46" width="90" height="12" rx="6" fill="#2f2a77"/>
+  <rect x="158" y="70" width="140" height="7" rx="3.5" fill="#dcdaf2"/>
+  <!-- chart on screen -->
+  <rect x="158" y="120" width="26" height="38" rx="3" fill="#5b54c9"/>
+  <rect x="192" y="104" width="26" height="54" rx="3" fill="#16a394"/>
+  <rect x="226" y="88" width="26" height="70" rx="3" fill="#f2a33c"/>
+  <rect x="260" y="112" width="26" height="46" rx="3" fill="#2f2a77"/>
+  <circle cx="330" cy="120" r="30" fill="none" stroke="#dcdaf2" stroke-width="10"/>
+  <path d="M330 90 a30 30 0 0 1 26 45 l-26 -15 z" fill="#f2a33c"/>
+
+  <!-- spotlight -->
+  <path d="M70 0 L18 190 L122 190 Z" fill="#f2a33c" opacity="0.18"/>
+
+  <!-- presenter -->
+  <circle cx="70" cy="128" r="28" fill="#f9dcc0"/>
+  <path d="M42 126 a28 28 0 0 1 56 0 c0 -19 -12 -30 -28 -30 s-28 11 -28 30 z" fill="#2a1a0e"/>
+  <path d="M70 160 c-26 0 -46 16 -46 38 v58 h92 v-58 c0 -22 -20 -38 -46 -38 z" fill="#16a394"/>
+  <path d="M70 160 l-13 22 l13 14 l13 -14 z" fill="#ffffff"/>
+  <!-- pointing arm -->
+  <path d="M112 182 l34 -16 l5 12 l-34 18 z" fill="#f9dcc0"/>
+
+  <!-- audience silhouettes -->
+  <g fill="#1b1a44">
+    <circle cx="176" cy="252" r="22"/>
+    <path d="M176 278 c-22 0 -38 13 -38 30 h76 c0 -17 -16 -30 -38 -30 z"/>
+    <circle cx="258" cy="262" r="20"/>
+    <path d="M258 286 c-20 0 -34 12 -34 28 h68 c0 -16 -14 -28 -34 -28 z"/>
+    <circle cx="336" cy="252" r="22"/>
+    <path d="M336 278 c-22 0 -38 13 -38 30 h76 c0 -17 -16 -30 -38 -30 z"/>
+  </g>
+</svg>
