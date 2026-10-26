@@ -10,6 +10,7 @@
    02. Rating stars
    03. Animations triggered from JavaScript
    04. Multi-step enrolment form
+   05. Keyboard focus in the navbar
    ========================================================================== */
 
 
@@ -160,4 +161,18 @@ html[data-bs-theme="dark"] .text-bg-primary {
 
 #confirm-btn {
   display: none;   /* shown by JavaScript on the last step */
+}
+
+
+/* ==========================================================================
+   05. KEYBOARD FOCUS IN THE NAVBAR
+   The default blue focus ring is almost invisible on the indigo navbar, so
+   links reached with the arrow keys get a bright amber outline.
+   ========================================================================== */
+.navbar .nav-link:focus-visible,
+.navbar .btn:focus-visible {
+  outline: 3px solid var(--edu-amber);
+  outline-offset: 2px;
+  border-radius: 0.375rem;
+  box-shadow: none;
 }
